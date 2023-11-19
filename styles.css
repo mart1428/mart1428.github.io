@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: #b3d9ff;
+    background-color: #e6f4ff;
     overflow-x:hidden;
 }
 
@@ -84,7 +84,7 @@ nav:hover{
 
 /* ----------------------------------------------- */
 h1 {
-    background-color: #66baff;
+    background-color: #008cff;
     font-size: 50px;
     padding: 30px 0px 30px 150px;
     color: white;
