@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 0rem);
+    overflow-x: hidden;
 }
 
 * {
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-    background-color: #e6f4ff;
+    background-color: #b8d8d8;
     overflow-x:hidden;
 }
 
@@ -34,7 +35,7 @@ nav {
     bottom: 0;
     left: 0;
     height: 100%;
-    background-color: #66b3ff;
+    background-color: #C2DEDC;
     overflow: hidden;
     width: 100px;
     transition: 100px 0.2s linear;
@@ -69,9 +70,9 @@ nav a svg {
 }
 
 nav a:hover{
-    background-color: rgb(128, 198, 255);
+    background-color: rgb(109, 192, 192);
     transition: all 0.1s ease;
-    border-bottom: .15em solid #005499;
+    border-bottom: .15em solid #09414d;
     z-index: 9999;
 }
 nav:hover{
@@ -84,7 +85,7 @@ nav:hover{
 
 /* ----------------------------------------------- */
 h1 {
-    background-color: #008cff;
+    background-color: #116A7B;
     font-size: 50px;
     padding: 30px 0px 30px 150px;
     color: white;
@@ -92,9 +93,9 @@ h1 {
 /* ----------------------------------------------- */
 
 #home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     
     height: 100vh;
 }
@@ -102,34 +103,47 @@ h1 {
 
 .whoami {
     margin-left: 100px;
-    padding: 100px 0px 100px 30px;
-    flex: 6;
-    font-size: 32px;
+    margin-top: 50px;
+    padding: 100px 50px 0px 30px;
+    font-size: 36px;
     height: 500px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
+.whoami span{
+    font-size: 50px;
+}
 .whoami p {
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     padding-left: 30px;
     line-height: 1.5;
+    padding-right: 50px;
+}
+
+.whoami b {
+    font-size:55px;
 }
 
 #space-contact {
-    margin-bottom: 50px;
+    font-size: 45px;
 }
 
 #profile-picture {
-    flex: 3;
     overflow: hidden;
+    margin-right: 50px;
 }
 
 #profile-picture img {
-    border-radius: 15%;
+    border-radius: 10%;
     border: 5px solid rgb(5, 61, 56);
-    width: 520px;
-    height: 640px;
+    width: 1500px;
     max-width: 100%;
     height: auto;
+    box-shadow: 5px 5px 2px rgba(151, 151, 151, 0.226);
 }
 
 u {
@@ -137,8 +151,8 @@ u {
 }
 
 .whoami p a svg {
-    height: 2em; /* Adjust the height as needed */
-    width: 2em; /* Adjust the width as needed */
+    height: 100px;
+    width: 110px;
     max-width: 100%;
 }
 
@@ -146,8 +160,8 @@ u {
 
 .about {
     flex: 6;
-    padding: 50px 90px 50px 150px;
-    font-size: 26px;
+    padding: 50px 70px 50px 150px;
+    font-size: 28px;
     overflow: visible;
     overflow-wrap: anywhere;
     margin-left: 70px;
@@ -161,36 +175,32 @@ u {
     list-style-type: none;
 }
 
+.about span {
+}
+
 .about p {
+    text-align: justify;
     line-height: 1.5;
+    font-size: 28px;
 }
 
 .about strong {
-    display: block;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    width: 250px;
+    display: inline-block;
+    width: 280px;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .about li {
     display: flex;
-    text-align: left;
+    font-size: 28px;
 }
 
-.about li span {
-    /* Adds a pseudo-element with a colon */
-    flex: 1;
-    display: block;
-    position: relative;
-    align-items: center;
-    margin-bottom: 10px;
+.entry span {
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.about li span::before {
-    position: absolute;
-    left: 50px; /* Adjust as needed */
-}
 
 /* -------------------------------------------------- */
 /* Education */
@@ -200,7 +210,11 @@ u {
     overflow: visible;
     width: 20%;
 }
-  
+
+.whoami i {
+    font-style: normal;
+    font-weight: 200;
+  }
   
 .entry{
     padding: 10px;
@@ -224,7 +238,8 @@ u {
 }
 
 .entry h3 img {
-    margin-left: 250px;
+    margin-left: 190px;
+    width: 150px;
 }
 
 
@@ -257,7 +272,7 @@ u {
 .entry:before{
     content:"";
     position:absolute;
-    width:3px;height:200%;
+    width:3px;height:180%;
     display:block;
     border-radius:0px;
     border:2px solid rgb(5, 81, 87);
@@ -337,7 +352,7 @@ u {
 }
 
 #project {
-    height: 75%;
+    height: auto;
 }
 
 #skill {
@@ -378,8 +393,9 @@ u {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    box-shadow: 10px 10px rgb(128, 198, 255);
-    height: 300px;
+    box-shadow: 5px 5px rgb(0, 160, 147);
+    height: 360px;
+    object-fit: cover;
 }
 
 
@@ -388,10 +404,10 @@ u {
     border-top: 5px solid black;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
-    background-color: hsl(207 100% 95%);
+    background-color: hsl(187 70% 85%);
     width: 100%;
     overflow: hidden;
-    box-shadow: 10px 10px rgb(128, 198, 255);
+    box-shadow: 5px 5px rgb(0, 160, 147);
     padding: 30px;
 }
 
@@ -412,13 +428,17 @@ u {
 
 
 .project svg {
-    margin-top: 50px;
     height: 50px;
+    margin-top: 30px;
 }
 
 
 /* -------------------------- */
 
+
+#gpt svg{
+    margin-right: 5px;
+}
 .link_button {
     display: flex;
     align-items: center;
@@ -443,13 +463,14 @@ u {
     max-width: 100%;
     height: 100px;
     border-radius: 50%;
-    background-color: rgb(128, 198, 255);
+    background-color: rgb(109, 192, 192);
     color: #fff;
     border: none;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
 }
 
 
@@ -482,7 +503,7 @@ u {
 }
 
 .experiences img {
-    width: 300px;
+    width: 100px;
     max-width: 100%;
     margin-right: 50px;
 }
@@ -526,7 +547,7 @@ u {
 }
 
 .experiences ul li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 /* ------------------------- */
 
@@ -542,7 +563,7 @@ u {
 }
 
 .languages h2 {
-    font-size: 50px;
+    font-size: 40px;
     border-bottom: 1px solid black;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -575,6 +596,7 @@ u {
     height: 100px;
     max-width: 100%;
     display: block;
+    margin-bottom: 20px;
 }
 
 
@@ -592,7 +614,7 @@ u {
 }
 
 .project a:hover{
-    fill: rgb(128, 198, 255);
+    fill: rgb(5, 61, 56);
 }
 
 .whoami a:hover{
@@ -621,6 +643,20 @@ a:hover::before {
 
 /* zoom 125 ++ */
 @media only screen and (max-width: 1400px) {
+
+    .whoami p a svg {
+        height: 70px;
+        width: 80px;
+        max-width: 100%;
+    }
+
+    .about p {
+        font-size: 24px;
+    }
+
+    .about li {
+        font-size: 24px;
+    }
     
     h1 {
         font-size: 45px;
@@ -639,14 +675,15 @@ a:hover::before {
     }
 
     .container img {
-        width: 60px;
+        width: 80px;
+        height: 80px;
     }
     
     .languages {
         margin: 20px 20px 20px 100px;
     }
     .languages h2 {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .container li {
@@ -661,9 +698,14 @@ a:hover::before {
         font-size: 28px;
     }
 
+    #profile-picture img {
+        width: 700px;        
+    }
+
     .whoami {
         font-size: 20px;
-        padding: 100px 20px 100px 10px;
+        padding: 80px 20px 100px 10px;
+        margin-top: 20px;
     }
 
     .about {
@@ -690,12 +732,19 @@ a:hover::before {
     }
     
     .entry {
-        width: 480px;
-        height: 270px;
+        width: 520px;
+        height: 300px;
     }
-
+    #home {
+        height: auto;
+    }
+    .whoami {
+        margin-bottom: 20px;
+        height: auto;
+    }
     .entry h3 img {
-        margin-left: 220px;
+        margin-left: 180px;
+        width: 151px;
     }
 
     .entry h3 {
@@ -724,7 +773,12 @@ a:hover::before {
     nav:hover{
         width: 180px;
     }
-}
+
+    .projects-container {
+        margin-left: 70px;
+        margin-bottom: 1px;
+    }
+} 
 
 @media only screen and (max-width: 1200px){
 
@@ -756,13 +810,34 @@ a:hover::before {
 
 }
 
+/* 
 
 /* split screen */
 
 @media only screen and (max-width: 900px){
+
+    .contact-button {
+        margin-right: 10px;
+    }
+    .about p {
+        font-size: 14px;
+    }
+
+    .about li {
+        font-size: 12px;
+    }
+
     h1 {
         font-size: 35px;
         padding: 30px 0px 30px 120px;
+    }
+    .whoami p a svg {
+        height: 50px;
+        width: 60px;
+        max-width: 100%;
+    }
+    #profile-picture img {
+        width: 300px;
     }
 
     .contact-button {
@@ -782,14 +857,34 @@ a:hover::before {
     .project {
         width: 450px;
         height: 300px;  
+        margin: 10px 0px 10px 50px;
     }
 
+    .languages h2 {
+        font-size: 20px;
+    }
     .container img {
         width: 50px;
         height: 50px;
     }
     .container li {
-        font-size: 14px;
+        font-size: 18px;
+        display: grid;
+        margin-right: 10px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .about strong{
+        width: 110px;
+    }
+    .about li {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .project img {
@@ -802,6 +897,7 @@ a:hover::before {
 
     .project svg {
         height: 20px;
+        margin-top: 0;
     }
     
     
@@ -815,7 +911,7 @@ a:hover::before {
     }
 
     .about {
-        padding: 50px 40px 50px 80px;
+        padding: 50px 25px 50px 80px;
         font-size: 14px;
         margin-left: 10px;
         margin-right: 10px;
@@ -848,39 +944,113 @@ a:hover::before {
     }
 
     .entry{
-        width:210px;
-        height: 200px;
+        width:300px;
+        height: 250px;
         padding-left: 20px;
     }
     .entry h3 img {
-        margin-left: 40px;
-        width: 40px;
+        margin-left: 80px;
+        width: 70px;
     }
 
     .entry h3 {
         margin: 0px;
-        font-size: 18px;
-    }
-
-    .core li {
-        font-size: 7px;
-    }
-    .whoami p {
+        margin-bottom: 20px;
         font-size: 20px;
     }
+    
+    .entry span {
+        font-size: 18px;
+    }
+    .core li {
+        font-size: 15px;
+        width: 226px;
+    }
+    .whoami p {
+        font-size: 16px;
+        padding-right: 10px;
+    }
+
+    .whoami span {
+        font-size: 30px;
+        display: block;
+    }
+
+    .whoami b {
+        display: block;
+        font-size: 30px;
+    }
+
+    .whoami {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 20px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #home {
+        height: auto;
+    }
+
+    .contact-section a {
+        padding: 10px 0px;
+    }
+
 }
 
 /* zoom 150 ++ */
+@media only screen and (max-width: 600px){
+
+    .whoami p a svg {
+        height: 40px;
+        width: 50px;
+        max-width: 100%;
+    }
+    .entry {
+        width: 200px;
+        height: 250px;
+        padding-left: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding: 20px 0px 20px 70px;
+    }
+
+    .core li {
+        font-size: 12px;
+        width: 200px;
+    }
+    .entry span {
+        font-size: 14px;
+    }
+    .entry h3 img {
+        margin-left: 20px;
+        width: 50px;
+    }
+
+    .entry h3{
+        font-size: 18px;
+    }
+}
 @media only screen and (min-width: 400px) and (max-width: 610px){
 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     h1 {
         font-size: 20px;
         padding: 30px 0px 30px 80px;
     }
     .project {
-        width: 300px;
-        height: 250px;  
+        width: 320px;
+        height: 280px;  
         margin: 0px;
+        padding-left: 30px;
     }
 
     .entry:before{
@@ -896,25 +1066,30 @@ a:hover::before {
         left: -22.7%;
     }
     .project img {
-        height: 210px;
+        height: 250px;
     }
 
     .project-inside p {
         padding-top: 10px;
-        font-size: 18px;
         height: 100px;
     }
     .project-inside h2 {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .project-inside {
+        padding: 20px;
+        height: 250px;
     }
 
     .project svg {
-        height: 20px;
+        margin-top: 40px;
+        height: 30px;
     }
     
     
     .project-inside p {
-        font-size: 8px;
+        font-size: 13px;
     }
 
     .whoami {
@@ -946,6 +1121,11 @@ a:hover::before {
         font-size: 16px;
     }
 
+    .project-inside {
+
+        padding-left: 20px;
+    }
+
 }
 
 @media only screen and (min-width: 2048px) {
@@ -961,10 +1141,18 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 399px){
+
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container li {
+        font-size: 14px;
+    }
     .project{
-        width: 250px;
+        width: 295px;
         height: 225px;
-        margin: 10px 0px 10px 10px;
+        margin: 10px 0px 10px 0px;
     }
 
     .project img {
@@ -972,17 +1160,93 @@ a:hover::before {
     }
 
     .project-inside {
-        padding: 20px;
+        padding: 10px;
     }
 
     .project-inside h2 {
         font-size: 12px;
     }
 
-    .project-inside p{
-        font-size: 7px;
-        height: 70px;
+    .project-inside p {
+        font-size: 9px;
+        height: 95px;
+    }
+
+    .contact-section{
+        padding: 50px 0px 50px 65px;
+    }
+    .link_button p{
+        font-size: 12px;   
     }
 }
 
+@media only screen and (max-width: 299px){
+    .container img {
+        width: 40px;
+        height: 40px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .entry span {
+        font-size: 15px;
+    }
+    .project-inside {
+        padding: 15px;
+    }
+    .project-inside h2{
+        font-size: 10px;
+    }
+    .project {    
+        width: 180px;
+    }
 
+    .project-inside p {
+        font-size: 7px;
+    }
+
+    .languages {
+        margin: 20px 20px 20px 60px;
+    }
+
+    .entry {
+        width: 140px;
+        height: 220px;
+    }
+
+    .core::before {
+        left: -24%;
+    }
+
+    .core li {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .entry h3 img {
+        margin-left: 12px;
+        width: 60px;
+    }
+
+    .entry h3 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        padding-left: 70px;
+        font-size: 30px;
+    }
+
+    .contact-section a p{
+        font-size: 10px;
+    }
+
+    .contact-button {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+}
