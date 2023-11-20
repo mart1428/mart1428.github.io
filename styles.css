@@ -610,7 +610,7 @@ u {
     transition: border-color 0.2s ease-in-out;
 }
 .contact-section a:hover{
-    fill: rgb(128, 198, 255);
+    fill: rgb(5, 61, 56);
 }
 
 .project a:hover{
