@@ -1146,7 +1146,7 @@ a:hover::before {
 
     .project svg {
         margin-top: 40px;
-        height: 30px;
+        width: 40px
     }
     
     
@@ -1283,12 +1283,12 @@ a:hover::before {
     }
 
     .project img {
-        height: 185px;
+        height: 200px;
     }
 
     .project-inside {
         padding: 10px;
-        height: 185px;
+        height: 200px;
     }
 
     .project-inside h2 {
@@ -1296,12 +1296,12 @@ a:hover::before {
     }
 
     .project-inside p {
-        font-size: 8.54px;
+        font-size: 8px;
         height: 95px;
     }
 
     .project svg {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .contact-section{
