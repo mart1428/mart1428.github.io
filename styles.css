@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 0rem);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 * {
@@ -160,7 +160,7 @@ u {
 
 .about {
     flex: 6;
-    padding: 50px 70px 50px 150px;
+    padding: 50px 50px 50px 150px;
     font-size: 28px;
     overflow: visible;
     overflow-wrap: anywhere;
@@ -175,7 +175,9 @@ u {
     list-style-type: none;
 }
 
-.about span {
+#list {
+    width: 1000px;
+    text-align: left;
 }
 
 .about p {
@@ -275,8 +277,8 @@ u {
     width:3px;height:180%;
     display:block;
     border-radius:0px;
-    border:2px solid rgb(5, 81, 87);
-    background: rgb(5, 81, 87);
+    border:2px solid rgb(128, 198, 255);
+    background: rgb(128, 198, 255);
     left:-19%;
     z-index: -9999;
     top:-30%;
@@ -393,7 +395,7 @@ u {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    box-shadow: 5px 5px rgb(0, 160, 147);
+    box-shadow: 5px 5px rgb(128, 198, 255);
     height: 360px;
     object-fit: cover;
 }
@@ -644,6 +646,19 @@ a:hover::before {
 /* zoom 125 ++ */
 @media only screen and (max-width: 1400px) {
 
+    .whoami span {
+        font-size: 36px;
+    }
+    .whoami b {
+        font-size: 40px;
+    }
+    .experiences {
+        margin: 20px 120px 20px 180px;
+    }
+
+    .experiences h2 p {
+        font-size: 22px;
+    }
     .whoami p a svg {
         height: 70px;
         width: 80px;
@@ -695,24 +710,24 @@ a:hover::before {
         margin-bottom: 20px;
         padding-left: 10px;
         line-height: 1.5;
-        font-size: 28px;
+        font-size: 20px;
     }
 
     #profile-picture img {
-        width: 700px;        
+        width: 1000px;   
     }
 
     .whoami {
         font-size: 20px;
-        padding: 80px 20px 100px 10px;
-        margin-top: 20px;
+        padding: 30px 20px 100px 10px;
+        margin-top: 40px;
     }
 
     .about {
         font-size: 18px;
         margin-left: 50px;
         margin-right: 50px;
-        padding: 50px 50px 50px 90px;
+        padding: 50px 0px 50px 90px;
     }
     
     .experiences h2 {
@@ -736,7 +751,7 @@ a:hover::before {
         height: 300px;
     }
     #home {
-        height: auto;
+        height: 100vh;
     }
     .whoami {
         margin-bottom: 20px;
@@ -779,9 +794,21 @@ a:hover::before {
         margin-bottom: 1px;
     }
 } 
+@media only screen and (width: 912px) and (height: 1368px) {
+    #home {
+        height: 45vh;
+    }
+  }
+@media only screen and (max-width: 1300px) {
+    #list {
+        width: 800px;
+    }
+}
 
 @media only screen and (max-width: 1200px){
-
+    #list {
+        width: 600px;
+    }
     h1 {
         font-size: 42px;
         padding: 30px 0px 30px 130px;
@@ -810,6 +837,11 @@ a:hover::before {
 
 }
 
+@media only screen and (max-width: 1000px){
+    #list {
+        width: 500px;  
+    }
+}
 /* 
 
 /* split screen */
@@ -820,11 +852,11 @@ a:hover::before {
         margin-right: 10px;
     }
     .about p {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .about li {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     h1 {
@@ -856,7 +888,7 @@ a:hover::before {
     }
     .project {
         width: 450px;
-        height: 300px;  
+        height: 310px;  
         margin: 10px 0px 10px 50px;
     }
 
@@ -876,10 +908,7 @@ a:hover::before {
     }
 
     .about strong{
-        width: 110px;
-    }
-    .about li {
-        display: block;
+        width: 220px;
     }
 
     .container {
@@ -888,7 +917,7 @@ a:hover::before {
     }
 
     .project img {
-        height: 260px;
+        height: 270px;
     }
 
     .project-inside h2 {
@@ -896,13 +925,13 @@ a:hover::before {
     }
 
     .project svg {
-        height: 20px;
+        height: 32px;
         margin-top: 0;
     }
     
     
     .project-inside p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .whoami {
@@ -911,7 +940,7 @@ a:hover::before {
     }
 
     .about {
-        padding: 50px 25px 50px 80px;
+        padding: 50px 10px 50px 80px;
         font-size: 14px;
         margin-left: 10px;
         margin-right: 10px;
@@ -941,6 +970,7 @@ a:hover::before {
 
     .experiences h2 p {
         font-size: 20px;
+        padding: 30px;
     }
 
     .entry{
@@ -1000,7 +1030,27 @@ a:hover::before {
     }
 
 }
+@media only screen and (max-width: 800px){
+    
+    .project-inside p {
+        font-size: 14px;
+    }
+    .about p {
+        font-size: 18px;
+    }
+    .about li {
+        font-size: 18px;
+    }
 
+    .experiences h2 p {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .experiences {
+        margin: 20px 80px 20px 120px;
+    }
+}
 /* zoom 150 ++ */
 @media only screen and (max-width: 600px){
 
@@ -1036,8 +1086,20 @@ a:hover::before {
         font-size: 18px;
     }
 }
-@media only screen and (min-width: 400px) and (max-width: 610px){
+@media only screen and (max-width: 599px){
+    #list {
+        width: 300px;
+    }
+    .about strong {
+        width: 160px;
+    }
+    .about p {
+        font-size: 14px;
+    }
 
+    .about li {
+        font-size: 14px;
+    }
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1047,7 +1109,7 @@ a:hover::before {
         padding: 30px 0px 30px 80px;
     }
     .project {
-        width: 320px;
+        width: 450px;
         height: 280px;  
         margin: 0px;
         padding-left: 30px;
@@ -1058,7 +1120,7 @@ a:hover::before {
     }
 
     .core:before {
-        left: -23%;
+        left: -25%;
     }
 
     .entry:after {
@@ -1097,7 +1159,7 @@ a:hover::before {
     }
 
     .experiences {
-        margin: 20px 60px 20px 150px;
+        margin: 20px 60px 20px 100px;
     }
 
     .experiences h2 {
@@ -1118,7 +1180,7 @@ a:hover::before {
     }
 
     .experiences h2 p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .project-inside {
@@ -1140,9 +1202,73 @@ a:hover::before {
 
 }
 
+@media only screen and (max-width: 550px){
+
+    .languages {
+        margin-left: 80px;
+    }
+    .project{
+        width: 400px;
+    }
+    .project-inside h2 {
+        font-size: 15px;
+    }
+    .project-inside p {
+        font-size: 12px;
+    }
+
+    .experiences h2 p {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .experiences ul {
+        padding: 15px;
+    }
+    .project-inside h2 {
+        font-size: 13px;
+    }
+    .project-inside p {
+        font-size: 11px;
+    }
+    .project-inside {
+        padding-left: 15px;
+    }
+    .project {
+        width: 320px;
+        padding-left: 0px;
+    }
+}
+
 @media only screen and (max-width: 399px){
 
+    .contact-button svg {
+        height: 22px;
+    }
+    .experiences {
+        margin: 20px 20px 20px 80px;
+    }
 
+    .experiences h2 p {
+        padding: 0px;
+        font-size: 11px;
+    }
+
+    .experiences ul li {
+        font-size: 11px;
+    }
+
+    #date-time {
+        font-size: 10px;
+    }
+    .about li {
+        font-size: 12px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1153,6 +1279,7 @@ a:hover::before {
         width: 295px;
         height: 225px;
         margin: 10px 0px 10px 0px;
+        padding-right: 10px;
     }
 
     .project img {
@@ -1161,6 +1288,7 @@ a:hover::before {
 
     .project-inside {
         padding: 10px;
+        height: 185px;
     }
 
     .project-inside h2 {
@@ -1168,8 +1296,12 @@ a:hover::before {
     }
 
     .project-inside p {
-        font-size: 9px;
+        font-size: 8.54px;
         height: 95px;
+    }
+
+    .project svg {
+        margin-top: 0px;
     }
 
     .contact-section{
@@ -1181,6 +1313,45 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 299px){
+
+
+    .exp-padding {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .project {
+        padding-left: 0px;
+        width: 220px;
+    }
+
+    .experiences h2 p {
+        width: 100px;
+    }
+    .projects-container {
+        margin-left: 65px;
+    }
+    .languages h2 {
+        font-size: 16px;
+    }
+    .whoami span {
+        font-size: 24px;
+    }
+    #list {
+        width: 200px;
+    }
+    
+    .about strong {
+        width: 140px;
+    }
+
+    .about li {
+        font-size: 10px;
+    }
+
+    .about p {
+        font-size: 10px;
+    }
+    
     .container img {
         width: 40px;
         height: 40px;
@@ -1196,10 +1367,7 @@ a:hover::before {
         padding: 15px;
     }
     .project-inside h2{
-        font-size: 10px;
-    }
-    .project {    
-        width: 180px;
+        font-size: 8px;
     }
 
     .project-inside p {
@@ -1226,7 +1394,7 @@ a:hover::before {
 
     .entry h3 img {
         margin-left: 12px;
-        width: 60px;
+        width: 50px;
     }
 
     .entry h3 {
@@ -1245,8 +1413,8 @@ a:hover::before {
 
     .contact-button {
         margin-right: 10px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
 }
