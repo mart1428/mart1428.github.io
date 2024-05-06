@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Christopher Martin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/logo.png">
+</head>
+<body>
+    <header id="about" class="navigation">
+        <nav>
+            <ul>
+                <!-- FONT AWESOME -->
+                <li>
+                    <a href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c.2 35.5-28.5 64.3-64 64.3H128.1c-35.3 0-64-28.7-64-64V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24zM352 224a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm-96 96c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H256z"/></svg>
+                        <span class="nav-item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutme">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                        <span class="nav-item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M128 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm32 97.3c28.3-12.3 48-40.5 48-73.3c0-44.2-35.8-80-80-80S48 51.8 48 96c0 32.8 19.7 61 48 73.3V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H288v54.7c-28.3 12.3-48 40.5-48 73.3c0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3V288H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H544V169.3c28.3-12.3 48-40.5 48-73.3c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 32.8 19.7 61 48 73.3V224H160V169.3zM488 96a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM320 392a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                        <span class="nav-item">Experience</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M0 448c0 35.3 28.7 64 64 64H224V384c0-17.7 14.3-32 32-32H384V64c0-35.3-28.7-64-64-64H64C28.7 0 0 28.7 0 64V448zM171.3 75.3l-96 96c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l96-96c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6zm96 32l-160 160c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l160-160c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6zM384 384H256V512L384 384z"/></svg>
+                        <span class="nav-item">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skill">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                        <span class="nav-item">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                        <span class="nav-item">Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        <span class="nav-item">Contact</span>
+                    </a>
+                </li>
+
+                <!-- contact? email? github? -->
+            </ul>
+        </nav>
+    </header>
+
+    <article id="home">
+        <div class="whoami">
+            <div class="whoami-text">
+                <p>
+                    <span>Hello there!<br><b><i>I'm </i>Christopher Martin.</b></span>
+                    <br>
+                    A dedicated and deeply passionate Machine Learning Engineer committed to ceaseless learning and the creation of revolutionary AI solutions. 
+                </p>
+    
+    
+                <p>
+                    <a href="https://github.com/mart1428">
+                        <svg id="github" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chrismartinn">
+                        <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    </a>
+                    <a href="https://chat.openai.com/g/g-OMUV9Zztw-chris-virtual-self">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="'1em" viewBox="8 10 40 45">
+                            <path d="M52.304,33.388c0.633,2.733,0.162,5.548-1.323,7.927	c-1.627,2.605-4.289,4.343-7.283,4.811c-0.461,1.791-1.379,3.437-2.718,4.781c-1.979,1.987-4.614,3.084-7.419,3.089	c-0.006,0-0.013,0-0.018,0c-3.055,0-5.926-1.322-7.908-3.591c-1.1,0.382-2.243,0.598-3.403,0.598c-0.895,0-1.795-0.115-2.684-0.349	c-2.713-0.712-4.985-2.438-6.399-4.86c-1.554-2.659-1.849-5.834-0.86-8.708c-1.569-1.355-2.701-3.143-3.255-5.188	c-0.733-2.707-0.369-5.538,1.027-7.97c1.713-2.988,4.772-4.929,8.201-5.228c1.052-4.686,5.239-8.2,10.238-8.2	c3.21,0,6.206,1.474,8.192,3.96c4.619-1.406,9.767,0.531,12.219,4.914c1.548,2.766,1.742,6.051,0.593,8.97	C50.88,29.719,51.855,31.447,52.304,33.388z M45.421,21.328c-1.751-3.129-5.721-4.248-8.847-2.499l-8.596,4.809l-0.028,1.729	l9.378-4.954l8.768,5.474C46.432,24.352,46.206,22.731,45.421,21.328z M33.976,30.227l-3.103-1.88l-2.998,1.584l-0.071,4.293	l3.063,1.781l3.117-1.798L33.976,30.227z M22,21v9.849l1.841,1.071l0.176-10.649l8.933-4.998C31.757,15.149,30.175,14.5,28.5,14.5	C24.916,14.5,22,17.416,22,21z M13.53,25.919c-0.864,1.506-1.09,3.258-0.637,4.934c0.454,1.676,1.534,3.075,3.04,3.938l8.543,4.901	l2.397-1.383L18,33.151V22.764C16.127,23.107,14.488,24.248,13.53,25.919z M20.563,46.786c1.677,0.44,3.43,0.202,4.929-0.674	l8.506-4.967l-0.005-2.324l-9.511,5.488l-8.657-4.966c-0.273,1.507-0.016,3.08,0.776,4.436	C17.478,45.276,18.885,46.345,20.563,46.786z M38.146,48.084c1.226-1.229,1.898-2.863,1.896-4.599l-0.037-9.605l-2.023-1.226	l0.021,10.784l-8.625,5.037c1.156,0.967,2.62,1.521,4.165,1.521c0.004,0,0.008,0,0.012,0C35.289,49.993,36.92,49.314,38.146,48.084z M47.588,39.197c0.919-1.473,1.21-3.215,0.819-4.907c-0.392-1.691-1.418-3.129-2.892-4.049l-8.354-5.216l-2.165,1.144l8.999,5.452	l0.039,10.323C45.491,41.482,46.758,40.525,47.588,39.197z"></path>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+            <div id="profile-picture">
+                <img src="image/profile pic.jpg" alt="profile picture">
+            </div>
+        </div>
+    </article>
+
+
+    <article id="aboutme">
+        <h1>About</h1>
+        <div class="about">
+            <p>I am a 4th-year Industrial Engineering student at University of Toronto, minoring in Engineering Business and Advanced Manufacturing. 
+                I am deeply enthusiastic about tackling captivating real-world problems and challenges through the application of AI and data analytics. I also had the chance to work as a Data Analyst Intern for the Workforce Management team in Walmart which enabled me in strengthening my skills and leadership qualities. Throughout my AI-focused career, I've gained proficiency in a range of technologies, including Python, BigQuery, Tableau, IBM Db2, Alteryx, Pandas, and PyTorch. Furthermore, I am currently concentrating on enhancing my problem-solving abilities through a dedicated focus on Machine Learning and Deep Learning domains.</p>
+        
+            <ul>
+                <li><strong>Languages</strong><p id="list">: Python, SQL, Java</p></li>
+                <li><strong>Databases</strong><p id="list">: MySQL, BigQuery, IBM DB2</p></li>
+                <li><strong>Tools/Frameworks</strong><p id="list">: PyTorch, Numpy, Pandas,<br> scikit-learn, matplotlib, seaborn</p></li>
+                <li><strong>Data Preparation & Visualization</strong><p id="list">: Tableau, Tableau Prep, Alteryx, Dataiku</p></li>
+                <li><strong>ML/DL Fundamentals</strong><p id="list">: Regression, Clustering, Decision Trees,Ensemble models, Neural Networks, CNN, RNN, LSTM, Transfer Learning, Generative AI/GAN, LLM</p></li>
+                <li><strong>Others</strong><p id="list">: Git/Github, CUDA, Microsoft Office Suite</p></li>
+               
+            </ul>
+            <p>I am actively seeking new-graduate opportunities in Machine Learning Engineering, aiming to contribute significantly while further advancing my skills in AI and data-driven solutions.</p>
+        </div>
+    </article>
+
+
+    <article id="experience">
+        <h1>Experience</h1>
+        <div class="experiences">
+            <div class="exp-padding">
+                <h2>
+                    <img src="image/Walmart.png">
+                    
+                    <p>Intern - Data Analyst</p>
+                </h2>
+                <ul>
+                    <li>
+                        Provided reports using Tableau Dashboard and Server to inform Executive Management and Store Managers of over 400 stores in Canada on stores’ productivity, absenteeism, availability and over $1 million in daily wage spent.
+                    </li>
+                    <li>
+                        Created and automated Alteryx and Tableau Prep workflows that pull and prepare data to 6 Tableau Dashboards.
+                    </li>
+                    <li>
+                        Developed ETL frameworks for IBM Db2 and BigQuery databases, to support data analysis and reporting.
+                    </li>
+                    <li>
+                        Saved at least 2 hours/day by creating Python scripts to optimize daily processes.
+                    </li>
+                    <li>
+                        Tools: Tableau, Tableau Prep, Alteryx, Python
+                    </li>
+                </ul>
+            </div>
+            
+            <p id="date-time">
+                May 2022 - Aug 2023 | Toronto, Ontario
+            </p>
+        </div>
+
+        <div class="experiences">
+            <div class="exp-padding">
+                <h2>
+                    <img src="image/uoft.jpg">
+                    <p>Undergraduate Research Assistant</p>
+                </h2>
+                <ul>
+                    <li>
+                        Worked on the development of COVID vaccination strategies that lessen outcome severity and disease spread.
+
+                    </li>
+                    <li>
+                        Created algorithm that prioritizes patients with conditions for vaccinations, resulting in a 10% lower in mortality rates.
+                    </li>
+                    <li>
+                        Developed a Greedy Algorithm for Critical Node Detection Problem that finds patients to vaccinate using Java.
+                    </li>
+                    <li>
+                        Tools: Java
+                    </li>
+                </ul>
+            </div>
+            
+            <p id="date-time">
+                May 2021 - Aug 2021 | Toronto, Ontario
+            </p>
+        </div>
+
+    </article>
+
+
+    <article id="project">
+        <h1>Project</h1>
+
+            
+
+        <div class="projects-container">
+            <div class="project">
+                <img src='image/ChatBot.png' alt='Bluetit'>
+                <div class="project-inside">
+                    <div>
+                        <h2>ChatBot</h2>
+                        <p>Simple ChatBot App built with Tkinter, and Huggingface (Llama 2 13B Chat). Utilized prompt engineering on Meta Llama 2 model to create 2 different versions of ChatBot. </p>
+                    </div>
+                    <a href="https://github.com/mart1428/ChatBotApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src='image/ielts.jpg' alt='Bluetit'>
+                <div class="project-inside">
+                    <div>
+                        <h2>IELTS Writing Prediction</h2>
+                        <p>Utilized DistilBERT to predict the writing score for IELTS examination. Achieved Test Accuracy of 75%</p>
+                    </div>
+                    <a href="https://github.com/mart1428/IELTSWritingPrediction">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src='image/BrainImage.jpg' alt='Bluetit'>
+                <div class="project-inside">
+                    <div>
+                        <h2>Brain Tumor Detection</h2>
+                        <p>Created a new Deep Learning model with CNN Techniques. Applied Transfer Learning technique on ResNet-18 model to enhance the accuracy in tumor detection. Reached 86% in testing accuracy.</p>
+                    </div>
+                    <a href="https://github.com/mart1428/BrainTumorDetection/">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src='image/shn.jpg' alt='Bluetit'>
+                <div class="project-inside">
+                    <div>
+                        <h2>Hospital Bed Prediction - SHN</h2>
+                        <p>Leading a team of 4, created a model that is able to predict the number of beds required, which will be used to match available resources to incoming and returning/incumbent patients,</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src='image/TimeSeriesForecasting.png' alt='Bluetit'>
+                <div class="project-inside">
+                    <div>
+                        <h2>Walmart Sales - TimeSeriesForecasting</h2>
+                        <p>A Time Series Forecasting model to predict Walmart Sales in each store using scikit-learn, XGBoost, and statsmodel. Reached top 25% in Kaggle Competition</p>
+                    </div>
+                    <a href="https://github.com/mart1428/TimeSeriesForecasting">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+    <article id="skill">
+        <h1>Skills</h1>
+        <div class="languages">
+            <h2>Languages</h2>
+            <ul class="container">
+                <li><img src="image/python-logo-only.png" alt="python" />Python</li>
+                <li><img src="image/sql.jpg" alt="sql" />SQL</li>
+                <li><img src="image/java.png" alt="java" />Java</li>
+            </ul>
+        </div>
+        <div class="languages">
+            <h2>Databases</h2>
+            <ul class="container">
+                <li><img src="image/mysql.png" alt="MySQL" />MySQL</li>
+                <li><img src="image/bigquery.jpg" alt="BigQuery" />BigQuery</li>
+                <li><img src="image/ibm db2.jpg" alt="IBM DB2" />IBM DB2</li>
+                <li><img src="image/mongodb.jpg" alt="Mongo DB" />MongoDB</li>
+            </ul>
+        </div>
+        <div class="languages">
+            <h2>Tools/Frameworks</h2>
+            <ul class="container">
+                <li><img src="image/pytorch.png" alt="Pytorch" />PyTorch</li>
+                <li><img src="image/numpy.png" alt="Numpy" />Numpy</li>
+                <li><img src="image/pandas.png" alt="Pandas" />Pandas</li>
+                <li><img src="image/scikit-learn.png" alt="Scikit-Learn" />Scikit-Learn</li>
+                <li><img src="image/docker.png" alt="Docker" />Docker</li>
+                <li><img src="image/matplotlib.png" alt="Matplotlib" />Matplotlib</li>
+                <li><img src="image/seaborn.png" alt="Seaborn" />Seaborn</li>
+                <li><img src="image/nltk.jpg" alt="NLTK" />NTLK</li>
+                <li><img src="image/hf.jpg" alt="Hugging Face" />Huggingface</li>
+                <li><img src="image/statsmodel.jpg" alt="Statsmodel" />statsmodel</li>
+            </ul>
+        </div>
+
+        <div class="languages">
+            <h2>Data Preparation/Visualization</h2>
+            <ul class="container">
+                <li><img src="image/tableau.jpg" alt="Tableau" />Tableau</li>
+                <li><img src="image/tableau prep.jpg" alt="Tableau Prep" />Tableau Prep</li>
+                <li><img src="image/alteryx.jpg" alt="Alteryx" />Alteryx</li>
+                <li><img src="image/dataiku.jpg" alt="Dataiku" />Dataiku</li>
+            </ul>
+        </div>
+
+        <div class="languages">
+            <h2>Others</h2>
+            <ul class="container">
+                <li><img src="image/github.jpg" alt="github"/>Git/Github</li>
+                <li><img src="image/cuda.jpg" alt="Cuda" />CUDA</li>
+                <li><img src="image/office.jpg" alt="Office" />Microsoft Office Suite</li>
+            </ul>
+        </div>
+    </article>
+
+    <article id="education">
+        <h1>Education</h1>
+        
+        <div class="timeline">
+            <div class="entry">
+              <div class="core">
+                <h3>
+                    2019 - 2024 
+                    <img src="image/uoft.jpg" width=80px alt="Your Image" class="image">
+                </h3>
+                <ul>
+                    <li><span>University of Toronto</span></li>
+                    <li>Toronto, Ontario, Canada</li>
+                    <li>Degree: Bachelor of Industrial Engineering</li>
+                </ul>
+              </div>
+            </div>
+           
+        </div>
+
+    </article>
+
+    <article id="contact">
+        <h1>Contact</h1>
+
+        <div class="contact-section">
+
+            <a href="https://www.linkedin.com/in/chrismartinn"> 
+                <div class="link_button">
+                    <div class="contact-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    </div>
+                    <p>linkedin.com</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/mart1428"> 
+                <div class="link_button">
+                    <div class="contact-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </div>
+                    <p>github.com</p>
+                </div>
+            </a>
+
+            <a href="mailto:christopherr.martin@mail.utoronto.ca">
+                <div class="link_button">
+                    <div class="contact-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    </div>
+                    <p>christopherr.martin@mail.utoronto.ca</p>
+                </div>
+            </a>
+
+            <a href="https://chat.openai.com/g/g-OMUV9Zztw-chris-virtual-self">
+                <div class="link_button">
+                    <div class = "contact-button" id="gpt">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="'1em" viewBox="8 10 40 45">
+                            <path d="M52.304,33.388c0.633,2.733,0.162,5.548-1.323,7.927	c-1.627,2.605-4.289,4.343-7.283,4.811c-0.461,1.791-1.379,3.437-2.718,4.781c-1.979,1.987-4.614,3.084-7.419,3.089	c-0.006,0-0.013,0-0.018,0c-3.055,0-5.926-1.322-7.908-3.591c-1.1,0.382-2.243,0.598-3.403,0.598c-0.895,0-1.795-0.115-2.684-0.349	c-2.713-0.712-4.985-2.438-6.399-4.86c-1.554-2.659-1.849-5.834-0.86-8.708c-1.569-1.355-2.701-3.143-3.255-5.188	c-0.733-2.707-0.369-5.538,1.027-7.97c1.713-2.988,4.772-4.929,8.201-5.228c1.052-4.686,5.239-8.2,10.238-8.2	c3.21,0,6.206,1.474,8.192,3.96c4.619-1.406,9.767,0.531,12.219,4.914c1.548,2.766,1.742,6.051,0.593,8.97	C50.88,29.719,51.855,31.447,52.304,33.388z M45.421,21.328c-1.751-3.129-5.721-4.248-8.847-2.499l-8.596,4.809l-0.028,1.729	l9.378-4.954l8.768,5.474C46.432,24.352,46.206,22.731,45.421,21.328z M33.976,30.227l-3.103-1.88l-2.998,1.584l-0.071,4.293	l3.063,1.781l3.117-1.798L33.976,30.227z M22,21v9.849l1.841,1.071l0.176-10.649l8.933-4.998C31.757,15.149,30.175,14.5,28.5,14.5	C24.916,14.5,22,17.416,22,21z M13.53,25.919c-0.864,1.506-1.09,3.258-0.637,4.934c0.454,1.676,1.534,3.075,3.04,3.938l8.543,4.901	l2.397-1.383L18,33.151V22.764C16.127,23.107,14.488,24.248,13.53,25.919z M20.563,46.786c1.677,0.44,3.43,0.202,4.929-0.674	l8.506-4.967l-0.005-2.324l-9.511,5.488l-8.657-4.966c-0.273,1.507-0.016,3.08,0.776,4.436	C17.478,45.276,18.885,46.345,20.563,46.786z M38.146,48.084c1.226-1.229,1.898-2.863,1.896-4.599l-0.037-9.605l-2.023-1.226	l0.021,10.784l-8.625,5.037c1.156,0.967,2.62,1.521,4.165,1.521c0.004,0,0.008,0,0.012,0C35.289,49.993,36.92,49.314,38.146,48.084z M47.588,39.197c0.919-1.473,1.21-3.215,0.819-4.907c-0.392-1.691-1.418-3.129-2.892-4.049l-8.354-5.216l-2.165,1.144l8.999,5.452	l0.039,10.323C45.491,41.482,46.758,40.525,47.588,39.197z"></path>
+                        </svg>
+                    </div>
+                    <p>GPT Interactive Profile</p>
+                </div>
+            </a>
+
+        </div>
+    </article>
+</body>
+</html>
+          
+
+
+
+
+
+
+
+
+
+
