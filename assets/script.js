@@ -11,19 +11,11 @@ const vizCanvas = $('#viz')
 const themeToggle = $('#themeToggle')
 
 function setLightTheme(enabled){
-    if(enabled){
-        document.documentElement.style.setProperty('--bg','#f7fafc')
-        document.documentElement.style.setProperty('--card','#ffffff')
-        document.documentElement.style.setProperty('--text','#081028')
-        document.documentElement.style.setProperty('--muted','#475569')
-        themeToggle.textContent = '☀️'
-    } else {
-        document.documentElement.style.removeProperty('--bg')
-        document.documentElement.style.removeProperty('--card')
-        document.documentElement.style.removeProperty('--text')
-        document.documentElement.style.removeProperty('--muted')
-        themeToggle.textContent = '🌙'
-    }
+    document.documentElement.style.removeProperty('--bg')
+    document.documentElement.style.removeProperty('--card')
+    document.documentElement.style.removeProperty('--text')
+    document.documentElement.style.removeProperty('--muted')
+    themeToggle.textContent = '🌙'
 }
 
 themeToggle?.addEventListener('click', ()=>{
