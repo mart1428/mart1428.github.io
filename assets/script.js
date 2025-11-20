@@ -126,5 +126,5 @@ if(textInput) textInput.addEventListener('keydown', (e)=>{ if(e.ctrlKey && e.key
 
 // initial message
 document.addEventListener('DOMContentLoaded', ()=>{
-    analysisDiv.innerHTML = '<p class="muted">Try the playground: paste a paragraph, click <strong>Analyze</strong> or <strong>Visualize Vectors</strong>.</p>'
+    analysisDiv.innerHTML = '<p class="muted">Try the playground: paste a paragraph, click <strong>Analyze</strong>.</p>'
 })
